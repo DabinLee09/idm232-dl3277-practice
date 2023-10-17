@@ -291,6 +291,35 @@ header .fi-sr-menu-burger{
 
 
 
+.footer .boxConta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .boxConta .box{
+    flex: 1 1 25rem;
+}
+
+.footer .boxConta .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .boxConta .box a{
+    color:#333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 991px) {
     html{
         font-size: 55%;
@@ -304,8 +333,6 @@ header .fi-sr-menu-burger{
         padding: 2rem;
     }
     
-    
-
 
 
 }
