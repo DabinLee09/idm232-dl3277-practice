@@ -1,4 +1,546 @@
-.body {
- background-color: pink;
+
+:root{
+    --amber:#E86A33; 
+}
+
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background: #F2E3DB;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+/*
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background: #999;
+    color: #fff;
+    padding: 0.5rem 3.5rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+    display: none;
+}
+
+.btn:hover{
+    background: var(--amber);
+}
+
+*/
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #F2E3DB;
+    border-radius: 0 0 3rem 3rem;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--amber);
+}
+
+
+
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    border-radius: 3rem;
+    
+}
+
+header .navbar a:hover{
+    color:var(--amber);
+}
+
+
+header #toggler{
+    display: none;
+}
+
+
+header .fi-sr-menu-burger{
+    font-size: 3rem;
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+
+/*home*/
+/*home*/
+
+.home{
+    display:flex;
+    align-items: center;
+    min-height: 90vh;
+    background: linear-gradient(-90deg, rgba(0,0,0,0),#F2E3DB 100%), url("image/home_background.jpg") no-repeat;
+    background-position: center;
+}
+
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: var(--amber);
+    text-shadow: rgba(0,0,0,0.1);
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:#333;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color:#888;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+.home .content .search{
+    width: 100%;
+    max-width: 1500rem;
+}
+
+
+.home .content .search .searchBar{
+    position: relative;
+    height: 5rem;
+    max-width: 1200rem;
+    background: #fff;
+    margin: auto;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-radius: 3rem;
+}
+
+.home .content .search .searchBar input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 3rem;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 3rem;
+    font-size: 1.7rem;
+}
+
+.home .content .search .searchBar .icon{
+    position: absolute;
+    right: 0; 
+    top: 0;
+    width: 5rem;
+    background: #E86A33;
+    height: 100%;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2.2rem;
+    border-radius: 0 3rem 3rem 0;
+    color: #fff;   
+    cursor: pointer;
+}
+
+.home .content .search .searchBar .icon:hover{
+    background: #EBD5C9;
+    color:#E86A33;
+    cursor: pointer;
+}
+
+
+
+/*filter*/
+/*filter*/
+
+.filterConta{
+    background: #EBD5C9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.filterConta .filter{
+    background: #F2E3DB;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-radius: 6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 20rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.filterConta .filter:hover{
+    background: #fdf5f2;
+    transform: scale(1.1);
+    box-shadow: rgba(0,0,0,0.1);
+}
+
+.filterConta .filter img{
+    width: 8rem; 
+}
+
+.filterConta .filter h3{
+    font-size: 1.7rem;
+    color: #333;
+    padding-bottom: 0.5rem;
+}
+
+.filterConta #filterBeef{
+    display: None;
+}
+
+
+
+
+
+
+/*filtersearch*/
+/*filtersearch*/
+
+
+
+
+
+
+
+
+
+
+
+/*recipes*/
+/*recipes*/
+
+.recipes {
+    background: #F2E3DB;
+    padding: 5rem;
+    text-align: center;
+}
+
+.recipes h1{
+    font-size: 6rem;
+    color: #333;
+}
+
+.recipes h1 span{
+    color:var(--amber);
+}
+
+
+.recipes .recipeConta{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:3rem;
+}
+
+.recipes .recipeConta .recipe{
+    cursor: pointer;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    border-radius: 3rem;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.recipes .recipeConta .recipe .recipeinfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 2rem;
+    color: #F2E3DB;
+    text-shadow: #333;
+    background: linear-gradient( rgba(0,0,0,0),#222);
+    z-index: 1;
+    overflow: hidden;
+    width: 36rem;
+    height: 0;
+    border-radius: 3rem;
+    transition: 0s ease-out;
+}
+
+.recipes .recipeConta .recipe:hover .recipeinfo{
+    height: 36rem;
+}
+
+.recipes .recipeConta .recipe .recipeinfo .filterPro{
+    display: none;
+}
+
+.recipes .recipeConta .recipe img{
+    position: center;
+    text-align: center;
+    border-radius: 3rem;
+    overflow: hidden;
+    width: 36rem;
+}
+
+
+.recipes .recipeConta .recipe:hover{
+    transform: scale(1.1);
+    background: #EBD5C9;
+    margin: 0.5rem;
+}
+
+
+.recipes .recipeConta .recipe .content{
+    padding: 2rem;
+}
+
+.recipes .recipeConta .recipe .content h3{
+    font-size: 1.7rem;
+    color: var(--amber);
+    padding-bottom: 0.5rem;
+}
+
+
+.recipes .recipeConta .recipe .content span{
+    font-size: 1.2rem;
+    color: #333;
+}
+
+
+
+
+/*footer*/
+/*footer*/
+
+footer .boxConta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    margin-top: 5rem;
+    background: linear-gradient(rgba(0,0,0,0), #d7c0b3);
+}
+
+footer .boxConta .box{
+    flex: 1 1 25rem;
+}
+
+footer .boxConta .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*max-width: 991px*/
+/*max-width: 991px*/
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    .home{
+        min-height: 70vh;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    
+    .filterConta .filter{
+        flex-basis: revert;
+    }
+
+    .filterConta .filter img{
+        width: 6rem; 
+    }
+    
+}
+
+
+
+
+/*max-width: 768px*/
+/*max-width: 991pxr*/
+@media (max-width: 768px) {
+    header .fi-sr-menu-burger{
+        display: block;
+    }
+
+    header label{
+        display: block;
+    }
+
+    header nav{
+        background: red;
+    }
+
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background:#EBD5C9;
+        scroll-padding-top: 5rem;
+        border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #F2E3DB;
+        border: .1rem solid rgba(0,0,0,0.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+    .home{
+        background-position: left;
+        min-height: 50vh;
+    }
+
+
+
+    .filterConta{
+        gap: 1.2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    
+    .filterConta .filter{
+        padding: 1.5rem;
+        gap: 1.2rem;
+    }
+    
+    .filterConta .filter img{
+        width: 5rem; 
+    }
+    
+    .filterConta .filter h3{
+        font-size: 1.3rem;
+        color: #333;
+        padding-bottom: 0.5rem;
+    }
+
+    
+
+
+
+
+
+
+
+
+    .recipes .recipeConta .recipe img{
+        width: 42rem;
+    }
+
+    .recipes .recipeConta .recipe .recipeinfo{
+        width: 42rem;
+        height: 0rem;
+    }
+
+    .recipes h1{
+        font-size: 5rem;
+    }
+
+    .recipes .recipeConta .recipe:hover{
+        margin: 1rem;
+    }
+
+    .recipes .recipeConta .recipe:hover .recipeinfo{
+        height: 42rem;
+    }
 
 }
+
+
+@media (mim-width: 320px) {
+    html{
+        font-size: 50%;
+    }
+
+    .home{
+        background-position: left;
+
+    }
+
+
+    
+
+}
+
+
+
+
+
