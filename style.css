@@ -1,4 +1,361 @@
-.body {
- background-color: pink;
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    --amber:#E86A33; 
+}
+
+*{
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'NPSfontBold';
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background: #F2E3DB;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+
+
+
+/*header*/
+/*header*/
+
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #F2E3DB;
+    border-radius: 0 0 3rem 3rem;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--amber);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    border-radius: 3rem;
+    
+}
+
+header .navbar a:hover{
+    color:var(--amber);
+}
+
+
+header #toggler{
+    display: none;
+}
+
+
+header .fi-sr-menu-burger{
+    font-size: 3rem;
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+
+
+
+
+.pickedRecipe{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 10rem;
+}
+
+
+.pickedRecipe .recipeTitle{
+    padding: 2rem;
+}
+
+.pickedRecipe .recipeTitle h3{
+    font-size: 5rem;
+    color: var(--amber);
+    padding-bottom: 0.5rem;
+}
+
+.pickedRecipe .recipeTitle span{
+    font-size: 3rem;
+    color: #333;
+    padding-bottom: 0.5rem;
+}
+
+.pickedRecipe .recipeTitle .filterConta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    
+}
+
+.pickedRecipe .filter{
+    background: #f7efea;
+    border: 0.1rem solid rgba(0,0,0,0.1);
+    border-radius: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    width: 12rem;
+    height: 12rem;
+}
+
+.pickedRecipe .filter h3{
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.pickedRecipe .filter img{
+    width: 5rem; 
+    padding-bottom: 0.5;
+}
+
+.pickedRecipe .filter .fi-bs-hourglass-end{
+    font-size: 4rem;
+    color: #E86A33
+}
+
+.pickedRecipe .filter .fi-sr-users-alt{
+    font-size: 4rem;
+    color: #E86A33
+}
+
+.pickedRecipe .recipeTitle h5{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    color: #666;
+    width: 60rem;
+
+}
+
+.pickedRecipe .pic img{
+    border-radius: 3rem;
+    overflow: hidden;
+    width: 64rem;
+}
+
+
+
+
+
+/*recipeIngredient*/
+/*recipeIngredient*/
+.recipeIngredient{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    padding-top: 10rem;
+    gap: 10rem;
+}
+
+.recipeIngredient h3{
+    font-size: 5rem;
+    color: var(--amber);
+    padding-bottom: 0.5rem;
+}
+
+
+.recipeIngredient span{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+
+
+
+
+/*recipeStep*/
+/*recipeStep*/
+.recipeStep{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 10rem;
+}
+
+.recipeStep h3{
+    font-size: 5rem;
+    color: var(--amber);
+    padding-bottom: 0.5rem;
+}
+
+
+.recipeStep .titleContent span{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-align: center;
+}
+
+
+.recipeStep .stepConta img{
+    border-radius: 3rem;
+    overflow: hidden;
+    width: 48rem; 
+    align-items: center; 
+}
+
+.recipeStep .stepConta .step{
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.recipeStep .stepConta .step h4 .num{
+    background: #E86A33;
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+
+}
+
+
+
+
+
+
+
+/*footer*/
+/*footer*/
+
+footer .boxConta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    margin-top: 5rem;
+    background: linear-gradient(rgba(0,0,0,0), #d7c0b3);
+}
+
+footer .boxConta .box{
+    flex: 1 1 25rem;
+}
+
+footer .boxConta .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+
+/*max-width: 991px*/
+/*max-width: 991px*/
+
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+    
+}
+
+
+
+
+
+
+/*max-width: 768px*/
+/*max-width: 768px*/
+@media (max-width: 768px) {
+    header .fi-sr-menu-burger{
+        display: block;
+    }
+
+    header label{
+        display: block;
+    }
+
+    header nav{
+        background: red;
+    }
+
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background:#EBD5C9;
+        scroll-padding-top: 5rem;
+        border-bottom: 0.1rem solid rgba(0,0,0,0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        border: .1rem solid rgba(0,0,0,0.1);
+        display: block;
+    }
+}
+
+
+
+@media (mim-width: 320px) {
+    html{
+        font-size: 50%;
+    }    
 
 }
