@@ -1,0 +1,379 @@
+@font-face {
+    font-family: 'NPSfontBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/NPSfontBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root{
+    --primary-light: #FFAD8A;
+    --primary: #FC8D5D;
+    --primary-dark: #EB430E;
+    --white: #FFFFFF;
+    --greyLight-1: #FAF0E9;
+    --greyLight-2: #F6E1DA;
+    --greyLight-3: #E4C7BE;
+    --greyDark: #CFAE9B;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'NPSfontBold';
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: var(--greyLight-1);
+    /* background: #F2E3DB; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+
+
+@media screen and (min-width: 900px) {
+    html {
+      font-size: 75%;
+    }
+}
+
+
+h5{
+    font-size: 6rem;
+    color: var(--primary);
+    text-shadow: rgba(0,0,0,0.1);
+}
+h3 {
+    font-size: 3.6rem;
+    color:#333;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/*header*/
+/*header*/
+
+
+.cooksyPeasy {
+    margin: 2rem;
+    /* padding: 4rem; */
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    align-items: center;
+    text-align: center;
+}
+
+
+.card {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+/*recipeDetail*/
+/*recipeDetail*/
+
+.recipeCard{
+    /* margin: 2rem; */
+    padding: 4rem;
+    min-height: 80vh;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.recipeCard .titleContent p {
+    font-size: 1.6rem;
+    color:#666;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.recipeCard .recipeInfo{
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    font-size: 1.2rem; 
+    gap: 1.6rem;
+}
+.recipeInfo .iconInfo{
+    width: 12rem;
+    padding: 0.8rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--greyDark);
+}
+.iconInfo i{
+    border-radius: 1rem;
+    font-size: 1.7rem;
+}
+
+.plateOuter{
+    padding: 1.4rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    overflow: hidden;
+}
+.plateInner{
+    padding: 1.0rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    overflow: hidden;
+}
+
+.recipeCard  img{
+    /* padding: 0.4rem; */
+    width: 56rem;
+    height: 42rem;
+    object-fit: cover;
+    border-radius: 3rem;
+    position: relative;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+    text-align: center;
+    justify-self: center;
+    /* transform: scale(1.3);     */
+}
+
+
+
+
+.ingreCard {
+    /* margin: 2rem; */
+    padding: 4rem;
+    min-height: 80vh;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.ingreCard img{
+    width: 56rem;
+}
+
+.ingreCard .ingre{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ingreCard .checkboxConta{
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+.ingreCard .checkboxConta input {
+    display: none;
+  }
+.ingreCard .checkboxConta label {
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .ingreCard .checkboxConta label:hover i {
+    color: var(--primary);
+  }
+  .ingreCard .checkboxConta label i {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--greyDark);
+    transition: .3s ease;
+  }
+
+  .ingreCard .checkboxConta input:checked ~ label{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  }
+  .ingreCard .checkboxConta input:checked ~ label i{
+    color: var(--primary);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .stepByStep {
+    margin: 2rem;
+    padding: 4rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+} */
+
+.stepCard {
+    margin: 2rem;
+    padding: 4rem;
+    border-radius: 3rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+
+
+.stepByStep .stepCard img {
+    width: 32rem;
+}
+
+
+
+
+
+
+
+
+.backbtn{
+    margin: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+    width: 24rem;
+    border-radius: 3rem;
+    color: var(--greyDark);
+    padding: 2rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+    justify-self: center;
+}
+
+
+/* .btn{
+    width: 12rem;
+    border-radius: 3rem;
+    color: var(--greyDark);
+    padding: 2rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+
+} */
+
+.btn:hover{
+    color: var(--primary);
+
+}
+
+.btn:active{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+/*max-width: 991px*/
+/*max-width: 991px*/
+
+@media (max-width: 1291px) {
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .recipeCard{
+        min-height: fit-content;
+    }
+
+    .recipeCard img{
+        height: 36rem;
+        width: 42rem;
+    }
+
+    .ingreCard{
+        min-height: fit-content;
+    }
+    .ingreCard img{
+        width: 42rem;
+        /* display: flex;
+        justify-content: center; */
+      
+    }
+
+    .backbtn{
+        width: 24rem;
+    }
+
+
+
+}
+
+
+@media (mim-width: 320px) {
+    html{
+        font-size: 50%;
+    }    
+
+
+}
